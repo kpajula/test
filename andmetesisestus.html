@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="java.js"></script>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Andmete sisestamine</title>
+</head>
+<body>
+
+<div class="navigatsioon">
+	<nav id="nav" role='navigation'>
+  		<a class="menuu"></a>
+  		<ul>
+    		<li><a href="index.html">Avaleht</a></li>
+    		<li class="active"><a href="andmetesisestus.html">Andmete sisestamine</a></li>
+    		<li><a href="andmetevaatamine.php">Andmete vaatamine</a></li>
+  		</ul>
+	</nav>
+</div>
+
+
+<div class="kontaktivorm">
+<form action="process.php" method="post">
+<div class="kooli_andmed">
+<!--Kooli andmed-->
+<div class="kool">
+<h3>Kooli andmed</h3>
+	<br />
+		<div class="vorm">
+			<label >Nimetus</label>
+				<div class="lahter">
+					<input type="text" name="K_nimi" />
+				</div>
+				<br />
+			<label>Aadress</label>
+				<div class="lahter">	
+					<input type="text" name="K_aadress" />
+				</div>
+				<br />
+			<label>E-mail</label>
+				<div class="lahter">
+					<input type="text" name="K_email" />
+				</div>
+				<br />
+			<label>Kontakt tel.</label>
+				<div class="lahter">	
+					<input type="text" name="K_telefoninr" />
+				</div>
+				<br />
+					
+		</div>
+	<br>	
+</div>
+</div>
+
+<div class="opetaja_andmed">
+<!--Juhtiv õpetaja andmed-->
+<div class="opetajad">
+<h3>Juhtiv õpetaja andmed</h3>
+	<br />
+		<div class="vorm">
+			<label>Eesnimi</label>
+				<div class="lahter">
+					<input type="text" name="O_eesnimi" />
+				</div>
+				<br />
+			<label>Perekonnanimi</label>
+				<div class="lahter">	
+					<input type="text" name="O_perenimi" />
+				</div>
+				<br />
+			<label>E-mail</label>
+				<div class="lahter">
+					<input type="text" name="O_email" />
+				</div>
+				<br />
+			<label>Kontakt tel.</label>
+				<div class="lahter">	
+					<input type="text" name="O_telefoninr" />
+				</div>
+				<br />
+					
+		</div>
+	<br>	
+</div>
+</div>
+
+
+<div class="personali_andmed">
+<!--Juhtiva Personali andmed-->
+<div class="personal">
+<h3>Juhtiv Personali andmed</h3>
+
+	<br />
+		<div class="vorm">
+			<label>Eesnimi</label>
+				<div class="lahter">
+					<input type="text" name="P_eesnimi" />
+				</div>
+				<br />
+			<label>Perekonnanimi</label>
+				<div class="lahter">	
+					<input type="text" name="P_perenimi" />
+				</div>
+				<br />
+			<label>E-mail</label>
+				<div class="lahter">
+					<input type="text" name="P_email" />
+				</div>
+				<br />
+			<label>Kontakt tel.</label>
+				<div class="lahter">	
+					<input type="text" name="P_telefoninr" />
+				</div>
+				<br />
+					
+		</div>
+	<br>
+</div>
+</div>
+
+<div class="opilaste_andmed">
+<!--Parimate õpilaste andmed-->
+<div class="opilased">
+<h3>Parima õpilase andmed</h3>
+
+	<br />
+		<div class="vorm">
+			<label >Eesnimi</label>
+				<div class="lahter">
+					<input type="text" name="PO_eesnimi" />
+				</div>
+				<br />
+			<label>Perekonnanimi</label>
+				<div class="lahter">	
+					<input type="text" name="PO_perenimi" />
+				</div>
+				<br />		
+		</div>
+	<br>	
+</div>
+</div>
+<div class="sisestanupp">
+<input class="sisestus" style="border:none" type="submit" value="Sisesta">
+</div>	
+</form>
+</div>
+
+
+<!-- !!!LEGEND!!!
+'K-KOOL','PO-Parimad õpilased','P-personal','O-opetajad'-->
+	
+
+		
+
+</body>
+</html>

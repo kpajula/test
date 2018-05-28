@@ -1,0 +1,38 @@
+DROP DATABASE IF EXISTS kevin_pajula_av31;
+CREATE DATABASE kevin_pajula_av31;
+USE kevin_pajula_av31;
+
+CREATE TABLE `kooli andmed`(
+	`kooliID` int(10) unsigned NOT NULL auto_increment,
+	`kooli nimi` varchar(30) NOT NULL DEFAULT "A",
+	`kooli aadress` varchar(60) NOT NULL DEFAULT "Sisestamata",
+	`kooli email` varchar(30) NOT NULL DEFAULT "Sisestamata", 
+	`kooli telefon nr.` int(15) NOT NULL DEFAULT 0,
+	PRIMARY KEY (`kooliID`)
+);
+
+CREATE TABLE `opetajate andmed`(
+	`opetajaID` int(10) unsigned NOT NULL auto_increment,
+	`opetaja eesnimi` varchar(30) NOT NULL DEFAULT "A",
+	`opetaja perenimi` varchar(30) NOT NULL DEFAULT "A",
+	`opetaja email` varchar(30) NOT NULL DEFAULT "Sisestamata", 
+	`opetaja telefon nr.` int(15) NOT NULL DEFAULT 0,
+	PRIMARY KEY (`opetajaID`)
+);
+
+CREATE TABLE `personali andmed`(
+	`personaliID` int(10) unsigned NOT NULL auto_increment,
+	`personali eesnimi` varchar(30) NOT NULL DEFAULT "A",
+	`personali perenimi` varchar(30) NOT NULL DEFAULT "A",
+	`personali email` varchar(30) NOT NULL DEFAULT "Sisestamata", 
+	`personali telefon nr.` int(15) NOT NULL DEFAULT 0,
+	PRIMARY KEY (`personaliID`)
+);
+
+CREATE TABLE `parimad opilased`(
+	`opilaseID` int(10) unsigned NOT NULL auto_increment,
+	`opilase eesnimi` varchar(30) NOT NULL DEFAULT "A",
+	`opilase perenimi` varchar(30) NOT NULL DEFAULT "A",
+	PRIMARY KEY (`opilaseID`)
+);
+
